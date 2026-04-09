@@ -1,58 +1,33 @@
-# Gram
+# Gram — A Terminal Text Editor
+> A vim-style text editor written from scratch in C (948 lines) — built as a systems programming exercise.
 
->Text Editor
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat&logo=c&logoColor=black) 
+![Terminal](https://img.shields.io/badge/Terminal-4EAA25?style=flat&logo=gnubash&logoColor=white)
 
-A personalised solution made in C for all your short notes and texts. For Example you must be familiar with vim Text Editor in Linux . In my Text Editor you will see all those functionalities and some ammendments listed below. Give it a try.
+## About
+A terminal-based text editor written in C from scratch. Built during my deep-dive into systems programming and terminal escape sequences.
 
-## Prerequisites
+## Features
+- Raw terminal mode (POSIX termios)
+- Cursor movement (arrow keys, Home/End, Page Up/Down)
+- Horizontal and vertical scrolling
+- File open/save with dirty flag detection
+- Incremental search (Ctrl+F)
+- Status bar with line count and filename
+- Verified 948 lines of handwritten C code
 
-  - This library is written in C. You need a C compiler to build and use it.
-  - Make sure you have the necessary development libraries installed for building C programs.
+## Acknowledgements
+Inspired by the [Build Your Own Text Editor](https://viewsourcecode.org/snaptoken/kilo/) tutorial by Paige Ruten (based on antirez's kilo editor).
 
-## Getting Started
+## Build and Run
+```bash
+make
+./gram [filename]
+```
 
-1. Cloning project in your Local Machine.
+## Author
 
-  ```bash
-  $ git clone "https://github.com/okpranavbansal/TextEditor_Gram"
-  ```
+**Pranav Bansal** — AI Infrastructure & SRE Engineer
 
-2. Navigate to the project directory.
-
-  ```bash
-  $ cd TextEditor_Gram
-  ```
-
-3. Compiling and running the project
-
-  ```bash
-  $ gcc gram.c -o gram
-  $ ./gram
-  ```
-
-
-## How to Use My Text Editor
-
-1. Opening a File
-   
-  ``` bash
-  $ ./gram  #For making a file
-  $ ./gram <openFile> #For using an old file
-  ```
-
-2. Saving a File
-
-   #### Ctrl + S
-   
-3. Quiting from a File
-   
-   #### Ctrl + Q (Pressed once after save and naming the file)
-
-   #### Ctrl + Q (Pressed thrice , If you want to exit without Saving )
-
-- Hope you would enjoy using this text editor made in C .
-
-## Contributors
-- Pranav Bansal
-
-Feel free to contribute to this project by submitting pull request or issues.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/okpranavbansal)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)](https://github.com/okpranavbansal)
